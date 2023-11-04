@@ -91,10 +91,8 @@ Dans la fin du programme il faudra modifier le nombre de pieces jointes :
 ```py
 attachment_paths = [f"fichiers/{nom_fichier_1}", f"fichiers/{nom_fichier_2}"]
 ```
- 
-Si vous n'avez pas de pieces jointes il suffira de commenter la ligne avec un "#"
 
-Dans le cas ou vous avez plus de pieces jointes il faudra simplement les ajouter a la suite ex : 
+Dans le cas ou vous avez plus de pieces jointes il faudra simplement les ajouter a la suite ex :
 
 ```py
 attachment_paths = [f"fichiers/{nom_fichier_1}", f"fichiers/{nom_fichier_2}", f"fichiers{nom_fichier_3}"]
@@ -110,8 +108,7 @@ attachment_paths = [f"fichiers/{nom_fichier_1}", f"fichiers/{nom_fichier_2}", f"
 
 ## License
 
-[MIT](/LICENSE)
-
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Auteur
 
