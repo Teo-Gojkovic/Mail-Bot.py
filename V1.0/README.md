@@ -85,7 +85,7 @@ Si vous utiliser Gmail ou OVH vous devez simplement modifier ce boolean :
 choix_smtp = True # True = OVH / False = Google Gmail
 ```
 
-### 5 - Derniere chose a modifier : 
+### 5 - Derniere chose à modifier : 
 Dans la fin du programme il faudra modifier le nombre de pieces jointes : 
 
 ```py
