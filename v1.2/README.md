@@ -1,2 +1,2 @@
 # Prochainement
-La mise a jour sera disponible avant le 1er décembre 2023 !
+La mise à jour sera disponible avant le 1er décembre 2023 !

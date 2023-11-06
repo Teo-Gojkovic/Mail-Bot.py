@@ -1,4 +1,4 @@
-# Programme d'automatisation d'envoi de mails en Python
+# Programme d'automatisation d'envois de mails en Python
 
 ![Version programme](https://img.shields.io/badge/Version-v1.1-blue.svg)
 ![Version python](https://img.shields.io/badge/Python-3.11.5-blue.svg)
@@ -7,9 +7,9 @@ Ce programme Python vous permet d'automatiser l'envoi de mails à une liste de d
 
 ## Fonctionnalités
 
-- Envoi de mails en masse à une liste de destinataires défini dans un fichier excel.
+- Envoi de mails en masse à une liste de destinataires définie dans un fichier excel.
 - Inclusion de pièces jointes depuis le répertoire "fichiers".
-- Mail plus ou moins personalisé par email
+- Mail plus ou moins personnalisé
 
 ## Prérequis
 
@@ -21,7 +21,7 @@ Ce programme Python vous permet d'automatiser l'envoi de mails à une liste de d
 
 ## Configuration
 
-### 1 - Il faudra completer les variables, elle ne sont pas toute obligatoire : 
+### 1 - Il faudra compléter les variables, elles ne sont pas toutes obligatoires :
 
 ```py
 # ------------------------------ Variables ------------------------------ 
@@ -59,29 +59,38 @@ Cordialement,
 ```
 
 ### 3 - Connection au serveur SMTP :
-Cette partie du code il ne faut pas a modifier, il faut simplment choisir votre serveur SMTP (Google / OVH / Free ect...)
+Cette partie du code, il ne faut pas à modifier, il faut simplement choisir votre serveur SMTP (Google/OVH/Free ect...)
 
-Si vous le connaisez pas : https://www.pc83.fr/tools/liste-des-serveurs-mails-orange-sfr-free.html
+Si vous ne le connaissez pas : https://www.pc83.fr/tools/liste-des-serveurs-mails-orange-sfr-free.html
 
-Si vous utiliser Gmail ou OVH vous devez simplement modifier ce boolean : 
+Si vous utilisez Gmail ou OVH, vous devez simplement modifier ce boolean :
 
 ```py
 choix_smtp = True # True = OVH / False = Google Gmail
 ```
 
 ### 4 - Fichier excel :
-Dans le fichier excel "**liste-email.xlsx**" 
+Dans le fichier excel : "**liste-email.xlsx**"
 
-Dans la fin du programme il faudra modifier le nombre de pieces jointes :
+| nom | email | pj1 | pj2 | pj3 |
+|:----------:|:----------:|:----------:|:----------:|:----------:|
+| Nom 1 | exemple1@gmail.com | cv.png | lettre-motivation1.png | |
+| Nom 2 | exemple2@gmail.com | cv.png | lettre-motivation2.png | |
+| Nom 3 | exemple3@gmail.com | cv.png | lettre-motivation3.png | |
+
+Vous n'êtes pas obligé de remplir les colonnes ***pj*** si elles sont vides il faudra simplement modifier légèrement le code :
+```py
+    nom_fichier_1 = row['pj1']
+    nom_fichier_2 = row['pj2']
+    #nom_fichier_3 = row['pj3']  
+```
+
+Vous devez mettre ou enlever le commentaire "**#**".
+
+Il faudra bien penser à aussi changer cette ligne :
 
 ```py
 attachment_paths = [f"fichiers/{nom_fichier_1}", f"fichiers/{nom_fichier_2}"]
-```
-
-Dans le cas ou vous avez plus de pieces jointes il faudra simplement les ajouter a la suite ex :
-
-```py
-attachment_paths = [f"fichiers/{nom_fichier_1}", f"fichiers/{nom_fichier_2}", f"fichiers{nom_fichier_3}"]
 ```
 
 **N'oubliez pas la virgule**
@@ -91,7 +100,6 @@ attachment_paths = [f"fichiers/{nom_fichier_1}", f"fichiers/{nom_fichier_2}", f"
 - [smtplib](https://docs.python.org/3/library/smtplib.html)
 - [time](https://docs.python.org/3/library/time.html)
 - [pandas](https://pandas.pydata.org/docs/user_guide/index.html)
-
 
 ## License
 
