@@ -96,6 +96,8 @@ attachment_paths = [f"fichiers/{nom_fichier_1}", f"fichiers/{nom_fichier_2}"]
 
 **N'oubliez pas la virgule**
 
+Les fichiers doivent se trouver dans le répertoire "fichiers".
+
 ## Documentation
 
 - [smtplib](https://docs.python.org/3/library/smtplib.html)
