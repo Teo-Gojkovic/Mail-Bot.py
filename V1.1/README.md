@@ -19,17 +19,14 @@ Ce programme Python vous permet d'automatiser l'envoi de mails à une liste de d
 
 3. IDE comme : [VS Code](https://code.visualstudio.com) / [PyCharm](https://www.jetbrains.com/fr-fr/pycharm/) / [Spyder](https://www.spyder-ide.org)
 
+4. Utilisez le fichier excel fourni : "**liste-email.xlsx**"
+
 ## Configuration
 
 ### 1 - Il faudra compléter les variables, elles ne sont pas toutes obligatoires :
 
 ```py
 # ------------------------------ Variables ------------------------------ 
-# Configurations d'envoi d'e-mails - OBLIGATOIRE
-sender_email = ""       # Entrez votre adresse email
-sender_password = ""    # Entrez votre mot de passe
-subject = ""            # Entrez l'objet de votre email
-
 # Coordonnées pour le contenu du mail : 
 nom = ""                # Entrez votre nom de famille en MAJUSCULE
 prenom = ""             # Entrez votre prénom
@@ -37,12 +34,16 @@ mail = ""               # Entrez votre email principal / pro
 numero = ""             # Entrez votre numéro de téléphone
 linkedin = ""           # Entrez le lien de votre page linkedin
 github = ""             # Entrez le lien de votre github
+
+# Configurations d'envoi d'e-mails - OBLIGATOIRE
+sender_email = ""       # Entrez votre adresse email
+sender_password = ""    # Entrez votre mot de passe
+subject = ""            # Entrez l'objet de votre email
 ```
 
 ### 2 - Contenu du mail : 
 
 ```py
-# Contenu du mail
 message = f""" 
 Bonjour ceci est un mail d'exemple écrit par {prenom} {nom}.
 Mes réseaux sont les suivant : 
