@@ -1,10 +1,11 @@
 # Mail-BOT
 
-Un court paragraphe d'introduction expliquant brièvement de quoi il s'agit. Mentionnez l'objectif principal de votre projet, son utilité, et pourquoi il est intéressant.
+Un programme qui vous permet d'automatiser l'envoi d'email, utile lorsqu'il faut chercher un stage, une alternance ou un travail.
 
 ## Sommaire
 - [Installation](#installation)
 - [Utilisation](#utilisation)
+- [Versions](#versions)
 - [License](#license)
 
 ## Installation
@@ -18,6 +19,14 @@ Il faudra suivre le README de la version que vous
 ```bash
 python main.py
 ```
+
+## Versions
+
+| N° Version | nouveauté |
+|:----------:|----------|
+| [1.0](./v1.0/README.md) |  Envoi de mails via un dictionaire python. |
+| [1.1](./v1.1/README.md) |  Envoi de mails via un fichier excel et pouvoir de choisir des piecès-joites selon le mail. |
+| [1.2 (Prochainement)](./v1.2/README.md) | Toutes les variables pourons être remplite via le fichier excel. |
 
 ## License
 
@@ -43,22 +52,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-```
-
-## Versioning
-
-| N° Version | nouveauté |
-|:----------:|----------|
-| [1.0](./v1.0/README.md) |  Envoi de mails via un dictionaire python. |
-| [1.1](./v1.1/README.md) |  Envoi de mails via un fichier excel et pouvoir de choisir des piecès-joites selon le mail. |
-| [1.2 (Prochainement)](./v1.2/README.md) | Toutes les variables pourons être remplite via le fichier excel. |
-
-```markdown
-### Versions futures
-
-- [1.0](./v1.0/README.md)
-- [1.1](./v1.1/README.md)
-- [1.2 (Prochainement)](./v1.2/README.md)
 ```
 
 ## Auteur
