@@ -6,6 +6,13 @@ from email import encoders
 import time
 import pandas as pd
 
+# ouverture de l'excel
+liste_email = pd.read_excel('liste-email.xlsx')
+
+message_email = pd.read_csv("email.txt", sep=" ") 
+
+
+
 # ------------------------------ Variables ------------------------------ 
 # Coordonnées pour le contenu du mail : 
 nom = ""                # Entrez votre nom de famille en MAJUSCULE
@@ -33,7 +40,6 @@ Cordialement,
 {nom} {prenom}
 """
 
-df = pd.read_excel('liste-email.xlsx')
 
 # ------------------------------ Connection au serveur SMTP ------------------------------
 # Choix SMTP config : 
