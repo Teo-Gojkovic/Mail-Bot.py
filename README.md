@@ -1,5 +1,7 @@
 # Mail-BOT
 
+![MAILBOT-LOGO](logo/Logo_avec_fond.png)
+
 Un programme qui vous permet d'automatiser l'envoi de mails, utiles lorsqu'il faut chercher un stage, une alternance ou un travail.
 
 ## Sommaire
@@ -24,9 +26,9 @@ python main.py
 
 | N° Version | nouveauté |
 |:----------:|----------|
-| [1.0](./v1.0/README.md) |  Envoie des mails via un dictionnaire python. |
-| [1.1](./v1.1/README.md) |  Envoi de mails via un fichier Excel et pouvoir de choisir des pièces-jointes selon le mail. |
-| [1.2 (Prochainement)](./v1.2/README.md) | Toutes les variables pourront être remplies via le fichier Excel. |
+| [1.0](./V1.0/README.md) |  Envoie des mails via un dictionnaire python. |
+| [1.1](./V1.1/README.md) |  Envoi de mails via un fichier Excel et pouvoir de choisir des pièces-jointes selon le mail. |
+| [1.2 (Prochainement)](./V1.2/README.md) | Toutes les variables pourront être remplies via le fichier Excel. |
 
 ## License
 
