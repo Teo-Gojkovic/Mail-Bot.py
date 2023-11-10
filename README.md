@@ -1,5 +1,9 @@
 # Mail-BOT
 
+Version actuelle : 
+
+![Version programme](https://img.shields.io/badge/Version-v1.2-blue.svg)
+
 ![MAILBOT-LOGO](logo/Logo_avec_fond.png)
 
 Un programme qui vous permet d'automatiser l'envoi de mails, utiles lorsqu'il faut chercher un stage, une alternance ou un travail.
