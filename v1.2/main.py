@@ -6,33 +6,23 @@ from email import encoders
 import time
 import pandas as pd
 
-# ------------------------------ Variables ------------------------------ 
-# Coordonnées pour le contenu du mail : 
-nom = ""                # Entrez votre nom de famille en MAJUSCULE
-prenom = ""             # Entrez votre prénom
-mail = ""               # Entrez votre email principal / pro
-numero = ""             # Entrez votre numéro de téléphone
-linkedin = ""           # Entrez le lien de votre page linkedin
-github = ""             # Entrez le lien de votre github
+# ------------------------------ Feuille excel ------------------------------
+df_mail = pd.read_excel('data.xlsx', sheet_name='liste-email') ; df_mail.head()
+df_var = pd.read_excel('data.xlsx', sheet_name='variables', header=None, names=['Variable', 'Valeur']) ; df_var.head()
 
+#déclaration des variables dans un dictionaire.
+variables = dict(zip(df_var['Variable'], df_var['Valeur']))
+
+# ------------------------------ Email ------------------------------
 # Configurations d'envoi d'e-mails - OBLIGATOIRE
 sender_email = ""       # Entrez votre adresse email
 sender_password = ""    # Entrez votre mot de passe
 subject = ""            # Entrez l'objet de votre email
-message = f""" 
-Bonjour ceci est un mail d'exemple écrit par {prenom} {nom}.
-Mes réseaux sont les suivant : 
-    Linkedin : {linkedin}
-    Github : {github}
-    
-Pour me contacter : 
-Email : {mail}
-N° téléphone : {numero}
 
-Cordialement,
-{nom} {prenom}
-"""
-
+# Ouverture de email.txt
+with open('email.txt', 'r', encoding='utf-8') as file:
+    email = file.read()
+message = email.format(**variables) #intégration des variables dans le message du mail.
 
 # ------------------------------ Connection au serveur SMTP ------------------------------
 # Choix SMTP config : 
@@ -59,11 +49,7 @@ try :
     server.login(sender_email, sender_password)
     print("Connection établie !")
 except : 
-    print("La connexion au serveur SMTP a échoué")
-
-# ------------------------------ Feuille excel ------------------------------
-workbook = pd.read_excel('liste-email.xlsx')
-workbook.head()    
+    print("La connexion au serveur SMTP a échoué")  
 
 # ------------------------------ Fonctions ------------------------------
 def send_email(sender_email, sender_password, receiver_email, subject, message, attachment_path):
@@ -95,7 +81,7 @@ def send_email(sender_email, sender_password, receiver_email, subject, message, 
     print(f"Email pour {nom_liste} a été envoyé en {elapsed_time:.2f} secondes.") 
 
 # Envoi de mail.
-for index, row in df.iterrows():
+for index, row in df_mail.iterrows():
     adresse_email = row['email']
     nom_liste = row['nom']
     nom_fichier_1 = row['pj1']

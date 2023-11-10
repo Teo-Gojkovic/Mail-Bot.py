@@ -1,0 +1,11 @@
+Bonjour ceci est un mail d'exemple écrit par {prenom} {nom}.
+Mes réseaux sont les suivant : 
+    Linkedin : {linkedin}
+    Github : {github}
+    
+Pour me contacter : 
+Email : {mail}
+N° téléphone : {numero}
+
+Cordialement,
+{nom} {prenom}
