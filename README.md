@@ -28,7 +28,8 @@ python main.py
 |:----------:|----------|
 | [1.0](./V1.0/README.md) |  Envoie des mails via un dictionnaire python. |
 | [1.1](./V1.1/README.md) |  Envoi de mails via un fichier Excel et pouvoir de choisir des pièces-jointes selon le mail. |
-| [1.2 (Prochainement)](./V1.2/README.md) | Toutes les variables pourront être remplies via le fichier Excel. |
+| [1.2](./v1.2/README.md) | Toutes les variables pourront être remplies via le fichier Excel. Et le contenu du mail est dans un fichier txt |
+| [1.3 (prochainement)](./v1.2/README.md) | intégration signature mail |
 
 ## License
 
