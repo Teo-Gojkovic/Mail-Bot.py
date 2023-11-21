@@ -5,7 +5,7 @@ Mes réseaux sont les suivant :
     
 Pour me contacter : 
 Email : {mail}
-N° téléphone : {numero}
+N° téléphone : {numero}.
 
 Cordialement,
 {nom} {prenom}
