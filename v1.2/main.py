@@ -85,7 +85,7 @@ for index, row in df_mail.iterrows():
     adresse_email = row['email']
     nom_liste = row['nom']
     nom_fichier_1 = row['pj1']
-    #nom_fichier_2 = row['pj2']
+    nom_fichier_2 = row['pj2']
     #nom_fichier_3 = row['pj3']
 
     attachment_paths = [f"fichiers/{nom_fichier_1}"]

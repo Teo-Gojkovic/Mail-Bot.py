@@ -99,7 +99,7 @@ choix_smtp = True # True = OVH / False = Google Gmail
 
 ### 4 - Fichier excel :
 
-Dans le fichier excel : `data.xlsx` :
+Dans le fichier excel `data.xlsx` :
 
 | nom | email | pj1 | pj2 | pj3 |
 |:----------:|:----------:|:----------:|:----------:|:----------:|
